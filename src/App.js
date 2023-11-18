@@ -13,9 +13,13 @@ import {
   Paper,
 } from '@mui/material';
 
+
+
 import ExamplePhoneCall from './ExamplePhoneCall';
 
 import Donation from './donate';
+
+
 
 const App = () => {
   const [selectedPolitician, setSelectedPolitician] = useState(null);
@@ -103,7 +107,7 @@ const App = () => {
         console.log('Location:', location);
         console.log('Party Filter:', partyFilter);
 
-        const response = await fetch(`http://localhost:3001/api/politicians?location=${location}${partyFilter}`, {
+        const response = await fetch(`http://localhost:3002/api/politicians?location=${location}${partyFilter}`, {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -194,7 +198,7 @@ const App = () => {
       }
   
       console.log('Initiating call...');
-      const response = await fetch('http://your-server-url/initiate-call', {
+      const response = await fetch('http://localhost:3001/initiate-call-poli', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

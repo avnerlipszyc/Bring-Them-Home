@@ -26,11 +26,11 @@ const Donation = ({ isOpen, onClose }) => {
         />
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleDonate} color="primary">
-          Donate
-        </Button>
         <Button onClick={onClose} color="primary">
           Close
+        </Button>
+        <Button onClick={handleDonate} color="primary">
+          Donate
         </Button>
       </DialogActions>
     </Dialog>
