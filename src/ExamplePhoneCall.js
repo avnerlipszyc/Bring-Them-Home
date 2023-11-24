@@ -81,10 +81,10 @@ const ExamplePhoneCall = ({ isOpen, onClose }) => {
 
       <DialogActions>
         {/* Change the button to call the handleCallMeClick function */}
-        <Button onClick={onClose} color="secondary">
+        <Button onClick={onClose} color="primary">
           Close
         </Button>
-        <Button onClick={handleCallMeClick} color="secondary">
+        <Button onClick={handleCallMeClick} color="primary">
           Call Me
         </Button>
       </DialogActions>
